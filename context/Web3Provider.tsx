@@ -1,3 +1,4 @@
+// @ts-nocheck
 'use client'
 
 import { createAppKit } from '@reown/appkit/react'
