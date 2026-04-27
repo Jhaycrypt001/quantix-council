@@ -1,0 +1,8 @@
+import { NextResponse } from 'next/server';
+
+export async function POST(request: Request) {
+  const { id, status } = await request.json();
+  console.log(`⚖️ Update: Proposal ${id} is now ${status}`);
+  // In a real app, you'd update the 'proposals' array here.
+  return NextResponse.json({ success: true });
+}
